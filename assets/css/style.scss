@@ -21,11 +21,9 @@ body {
 }
 
 .navbar {
-    /*background-color: $black;*/
     height: fit-content;
 
     &-text {
-        //color: $white;
         color: $black;
         min-width: max-content;
         font-size: 24px;
@@ -72,7 +70,6 @@ body {
 }
 
 .header_tel {
-    //color: $white;
     color: $black;
 
     &:hover {
@@ -104,52 +101,16 @@ body {
     }
 }
 
-/*.row_1 {
-    height: 80vh;
-    width: 300px;
-    background: linear-gradient(to right, rgb(8, 8, 8) 98%, rgb(255, 215, 9) 2%);
-
-}*/
-
-.menu_item {
-    background-color: #13AFBB;
-    border-radius: 6px 6px 6px 6px;
-    margin: 8px;
-    width: 200px;
-    height: 80px;
-    font-family: 'Tahoma, sans-serif';
-    font-size: 24px;
-    padding: 15px;
-    justify-content: space-around;
-    text-align: center;
-    color: #fff;
-    margin-left: 50px;
-}
-
-
 .main-page-container {
     margin-bottom: 10%;
     margin-left: 8%;
 }
 
-.row-main-page-container {
-
-    /* @media screen and (max-width: $mobile-m) {
-        display: block;
-    }*/
-}
-
-.row-historical-page-container {
-    margin-left: 10%;
-}
-
-.row-modern-page-container {
-    margin-left: 10%;
-}
-
+.row-historical-page-container,
+.row-sovietunion-page-container,
+.row-modern-page-container,
 .row-photos-page-container {
     margin-left: 10%;
-    margin-bottom: 5%;
 }
 
 .card-main-page {
@@ -159,17 +120,11 @@ body {
     @media screen and (max-width: $mobile-l) {
         text-align: right;
     }
-
 }
 
-.card-historical-page {
-    margin-top: 20px;
-}
-
-.card-photos-page {
-    margin-top: 20px;
-}
-
+.card-historical-page,
+.card-sovietunion-page,
+.card-photos-page,
 .card-modern-page {
     margin-top: 20px;
 }
@@ -185,22 +140,10 @@ body {
         color: $black;
         font-size: 18px;
     }
-
 }
 
-.historical-page-button {
-    background-color: $white;
-    border: 2px solid $blue;
-    color: $black;
-
-    &:hover {
-        background-color: $white;
-        border: 2px solid $blue;
-        color: $black;
-        font-size: 18px;
-    }
-}
-
+.historical-page-button,
+.sovietunion-page-button,
 .modern-page-button {
     background-color: $white;
     border: 2px solid $blue;
@@ -252,7 +195,6 @@ body {
         font-size: 34px;
         border-bottom: 2px solid $blue;
     }
-
 }
 
 .blog__title2 {
@@ -271,9 +213,7 @@ body {
     @media screen and (max-width: $mobile-l) {
         font-size: 22px;
     }
-
 }
-
 
 .blog__meta {
     color: $blue;
@@ -297,8 +237,10 @@ body {
     margin-left: 10%;
 }
 
+
+// !!!!!!!!!!!!!1Адаптив!!!!!!!!!!!!!!!!!!!
 .rent-main,
-.container-contacts {
+.container-contacts {   
     margin-left: 150px;
     margin-bottom: 30px;
 }
@@ -308,7 +250,7 @@ body {
     max-width: -moz-max-content;
     max-width: max-content;
     font-size: 40px;
-    border-bottom: 3px solid #13B0B9;
+    border-bottom: 3px solid $blue;
 }
 
 .rent-main__title2 {
@@ -322,9 +264,9 @@ body {
 
 .container-contacts__text {
     font-size: 20px;
-    color: black;
+    color: $black;
     padding: 15px 0px;
-    border-bottom: 2px solid #13B0B9;
+    border-bottom: 2px solid $blue;
 }
 
 .container-contacts__map {
@@ -389,22 +331,22 @@ a.footer__text:hover {
 .menu_list {
     height: 80vh;
     width: 200px;
-    background: linear-gradient(to right, rgb(8, 8, 8) 90%, rgb(255, 215, 9) 10%);
+   
 }
 
 .active_menu_item {
     position: relative;
-    background-color: $blue;
-    border-radius: 6px 6px 6px 6px;
+    background-color: $white;
+    border-radius: 6px;
     margin: 8px;
     width: 200px;
-    height: 80px;
+    height: 60px;
     font-family: $font;
     font-size: 24px;
-    padding: 15px;
+    padding: 10px;
     justify-content: space-around;
     text-align: center;
-    color: $white;
+    color: $black;
     margin-left: 50px;
 }
 
@@ -436,7 +378,7 @@ a.footer__text:hover {
     &__icon {
         display: block;
         position: relative;
-        background: white;
+        background: $white;
         width: 90%;
         height: 4px;
         transition: .4s;
@@ -493,7 +435,7 @@ a.footer__text:hover {
     content: "";
     display: block;
     position: absolute;
-    background: white;
+    background: $white;
     width: 100%;
     height: 4px;
     transition: .4s;
