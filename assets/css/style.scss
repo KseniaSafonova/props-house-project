@@ -84,8 +84,23 @@ body {
     width: 180px;
     height: auto;
 
-    @media screen and (min-width: $laptop) {
+    @media screen and (max-width: $laptop) {
         width: 200px;
+    }
+
+    @media screen and (max-width: $tablet) {
+        width: 170px;
+        margin-top: 15px;
+    }
+
+    @media screen and (max-width: $mobile-l) {
+        width: 140px;
+        margin-top: 15px;
+    }
+
+    @media screen and (max-width: $mobile-s) {
+        margin-top: 15px;
+        width: 100px;
     }
 }
 
@@ -237,12 +252,20 @@ body {
     margin-left: 10%;
 }
 
-
-// !!!!!!!!!!!!!1Адаптив!!!!!!!!!!!!!!!!!!!
 .rent-main,
 .container-contacts {   
     margin-left: 150px;
     margin-bottom: 30px;
+
+    @media screen and (max-width: $tablet) {
+        margin-left: 50px;
+        font-size: 16px;
+    }
+
+    @media screen and (max-width: $mobile-l) {
+        margin-left: 30px;
+        font-size: 14px;
+    }
 }
 
 .rent-main__title {
@@ -267,6 +290,10 @@ body {
     color: $black;
     padding: 15px 0px;
     border-bottom: 2px solid $blue;
+
+    @media screen and (max-width: $mobile-l) {
+        font-size: 14px;
+    }
 }
 
 .container-contacts__map {
@@ -331,7 +358,7 @@ a.footer__text:hover {
 .menu_list {
     height: 80vh;
     width: 200px;
-   
+    margin-top: 30px;
 }
 
 .active_menu_item {
