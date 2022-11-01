@@ -1,6 +1,6 @@
 Проект: разработка и вёрстка сайта для склада аренды реквизита
 
-Технологии: HTML5, CSS3
+Стек: HTML5, CSS3
 
 ![project2_screen1](https://user-images.githubusercontent.com/77698266/139585020-6df59545-be81-444e-a24f-fab17f0db2eb.jpg)
 
